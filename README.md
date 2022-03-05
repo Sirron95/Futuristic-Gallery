@@ -1,3 +1,3 @@
 # Photo-Gallery
-A simple Photo Gallery made my using HTML,CSS, FLEXBOX.
-View in 500% window size.
+A fully responsive simple Photo Gallery made by using HTML and CSS.
+Best view in 500% window size.
