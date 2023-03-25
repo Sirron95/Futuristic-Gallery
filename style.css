@@ -1,91 +1,90 @@
-*{
-    margin-top: 0px;
+* {
+  margin-top: 0px;
 }
-body{
-  background-image:url(images/image17.jpg)
+body {
+  background-image: url(images/image17.jpg);
 }
- 
-#i12{
+
+#i12 {
   display: none;
 }
 
- 
- header{
- 
-font-family: 'Lobster', cursive;
- font-size: 20px;
- color:red;
+header {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  color: red;
 
- 
- display: flex;
- justify-content: center;
- flex-wrap: wrap;
- 
- margin-bottom: -25px;
- 
- 
- }
-.fcontainer {
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-bottom: -2rem;
+}
+
+.image {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
-}
 
-img {
+  transform-style: preserve-3d;
+}
+.image img {
   width: auto;
-  height: 26.5vh;
+  height: 26vh;
+  justify-content: center;
+  border-radius: 2rem;
+
+  padding: 0.7rem;
+  padding-right: 5rem;
+  overflow: hidden;
 
   justify-content: center;
-  border-radius: 5px;
-  padding: 1px;
+
   overflow: hidden;
+  transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+  box-shadow: -80px 60px 15px 5px rgba(0, 0, 0, 0.4);
 }
-
 img:hover {
-  transform: scale(1.5, 1.5);
-  transition: 0.3s transform;
+  transform: rotateX(0deg) rotateZ(0deg) scale(1.2, 1.2)
+    translate3d(0px, 0px, 0px);
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
-@media all and (min-width:0px) and (max-width: 162.3px) {
-  body{
-    background-image:url(images/image18.jpg)
+@media only screen and (max-width: 914px) {
+  body {
+    background-image: url(images/image18.jpg);
   }
-  #i12{
+  #i12 {
     display: block;
   }
-  header{
-  
- 
-  
+  header {
     display: flex;
-   justify-content: center;
+    justify-content: center;
     flex-wrap: wrap;
-    color:cyan;
-    font-size: 15px;
-    margin-bottom: -20px;
-    
-   }
- 
-}
-@media all and (min-width:162.3px) and (max-width: 233.9px) {
-  body{
-    background-image:url(images/image14.jpg)
+    color: cyan;
+    font-size: 2rem;
+    margin-bottom: -2rem;
   }
-  #i12{
+}
+@media all and (min-width: 914.1px) and (max-width: 1350px) {
+  body {
+    background-image: url(images/image14.jpg);
+  }
+  #i12 {
     display: block;
   }
- 
- header{
-  
- 
-  
-  display: flex;
- justify-content: center;
-  flex-wrap: wrap;
-  color:yellowgreen;
-  font-size: 20px;
-  margin-bottom: -20px;
-  
- }
-}
 
+  header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: yellowgreen;
+    font-size: 2rem;
+    margin-bottom: -2rem;
+  }
+  .image {
+    margin-left: 1.1rem;
+  }
+}
